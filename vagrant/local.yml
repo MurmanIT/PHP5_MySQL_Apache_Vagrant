@@ -1,0 +1,24 @@
+# Guest OS timezone
+timezone: Europe/Moscow
+
+# Are we need check box updates for every 'vagrant up'?
+box_check_update: false
+
+# Virtual machine name
+machine_name: netcat
+
+# Virtual machine IP
+ip: 192.168.83.120
+
+# Virtual machine CPU cores number
+cpus: 1
+
+# Virtual machine RAM
+memory: 1024
+
+# Порт для MySQL
+mysql_port: 33306
+
+# Откуда запуска NetCat
+netcat: './files'
+
