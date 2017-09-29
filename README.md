@@ -4,13 +4,6 @@
 
 Скачать можно тут: [Vagrant](https://www.vagrantup.com/)
 
-| Название | Описание |
-|----|----|
-| IP | 192.168.83.120 |
-| MySQL User | root |
-| MySQL Password | netcat |
-| MySQL DB | netcat |
-
 ### Описание директории
 
 ```
