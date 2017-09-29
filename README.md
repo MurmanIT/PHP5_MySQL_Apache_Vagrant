@@ -17,6 +17,7 @@
 vagrant Директория
 	local.yml - файл настроек
 	provision.sh - файл запускающие скрипты bash
+	apache_restart.sh - файл перезапуска apache
 	php.sh - установщик php
 	mysql.sh - установщик mysql
 	apache.sh - устрановщик apache
@@ -24,7 +25,7 @@ vagrant Директория
 
 	config Директория
 		netcat.conf - Виртуальный хост для Apache
-		
+
 		php Директория
 			php_apache.ini Настройки для php
 
