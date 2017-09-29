@@ -52,7 +52,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.network "private_network", ip: options['ip']
 
-  config.vm.synced_folder options['netcat'] ,  '/app' , owner: 'vagrant', group: 'www-data'
+  config.vm.synced_folder options['app'] ,  '/app' , owner: 'vagrant', group: 'www-data'
 
   config.vm.synced_folder './vagrant' ,  '/vagrant'
 

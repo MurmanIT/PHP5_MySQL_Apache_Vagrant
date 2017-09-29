@@ -5,10 +5,10 @@ timezone: Europe/Moscow
 box_check_update: false
 
 # Virtual machine name
-machine_name: netcat
+machine_name: nodejs
 
 # Virtual machine IP
-ip: 192.168.83.120
+ip: 192.168.83.123
 
 # Virtual machine CPU cores number
 cpus: 1
@@ -20,5 +20,5 @@ memory: 1024
 mysql_port: 33306
 
 # Откуда запуска NetCat
-netcat: './files'
+app: './app'
 
