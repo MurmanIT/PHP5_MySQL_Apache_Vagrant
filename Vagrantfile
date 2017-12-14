@@ -1,9 +1,6 @@
 require 'yaml'
 require 'fileutils'
 
-domains = {  
-  netcat: 'netcat.dev'
-}
 
 # Конфигурация файла
 config = {
@@ -44,17 +41,17 @@ Vagrant.configure("2") do |config|
     vb.name = options['machine_name']
   end
 
-  config.vm.network "forwarded_port", guest: 3306,  host: options['mysql_port']
-
   config.vm.hostname = options['machine_name']
 
   config.vm.define options['machine_name']
 
   config.vm.network "private_network", ip: options['ip']
 
-  config.vm.synced_folder options['app'] ,  '/app' , owner: 'vagrant', group: 'www-data'
-
+  config.vm.synced_folder options['api'] ,  '/api' , owner: 'vagrant', group: 'www-data'
+  config.vm.synced_folder options['web'] ,  '/web' , owner: 'vagrant', group: 'www-data'
+  
   config.vm.synced_folder './vagrant' ,  '/vagrant'
+  config.vm.synced_folder options['dump'] , '/dump'
 
   config.vm.provision 'shell', path: './vagrant/provision.sh'
 

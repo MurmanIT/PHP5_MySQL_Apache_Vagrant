@@ -5,20 +5,19 @@ timezone: Europe/Moscow
 box_check_update: false
 
 # Virtual machine name
-machine_name: nodejs
+machine_name: inkloc
 
 # Virtual machine IP
-ip: 192.168.83.123
+ip: 192.168.83.110
 
 # Virtual machine CPU cores number
-cpus: 1
+cpus: 2
 
 # Virtual machine RAM
-memory: 1024
+memory: 4096
 
-# Порт для MySQL
-mysql_port: 33306
 
 # Откуда запуска NetCat
-app: './app'
-
+api: './api'
+dump: './broker'
+web: './web'
